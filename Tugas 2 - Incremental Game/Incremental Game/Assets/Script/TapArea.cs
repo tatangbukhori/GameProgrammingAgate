@@ -1,0 +1,31 @@
+﻿using UnityEngine;
+
+using UnityEngine.EventSystems;
+
+
+
+public class TapArea : MonoBehaviour, IPointerDownHandler
+
+{
+
+    public void OnPointerDown(PointerEventData eventData)
+
+    {
+
+        GameManager.Instance.CollectByTap(eventData.position, transform);
+
+    
+
+}
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
